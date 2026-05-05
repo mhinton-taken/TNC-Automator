@@ -2,10 +2,13 @@
 This PowerShell tool automates network validation using the tnc (Test-NetConnection) cmdlet. It sequentially tests DNS, ICMP, and TCP port status. It features conditional escalation, running a TraceRoute only if port tests fail, and captures all results in a timestamped forensic log for enterprise troubleshooting.It follows a structured execution flow that mirrors the OSI model to identify exactly where a network connection is failing.  
 
 # Features
-* **Layered Diagnostics:** Progressively tests DNS (Layer 7), ICMP Reachability (Layer 3), and TCP Port Availability (Layer 4).  
-* **Conditional Escalation:** Automatically initiates a -TraceRoute only if the specific port test fails, saving time during successful checks.  
-* **Forensic Logging:** Utilizes stream redirection to capture warnings and errors into a timestamped, UTF-8 encoded text file for audit trails.  
+* **Accuracy:** Eliminates manual data entry errors in log files.
+* **Automation:** Replaces 5+ manual commands with one execution.
 * **Baseline Capture:** Records local IP and DNS configurations at the start of every test to provide context for the results.  
+* **Conditional Escalation:** Automatically initiates a -TraceRoute only if the specific port test fails, saving time during successful checks.
+* **Forensic Logging:** Utilizes stream redirection to capture warnings and errors into a timestamped, UTF-8 encoded text file for audit trails.    
+* **Layered Diagnostics:** Progressively tests DNS (Layer 7), ICMP Reachability (Layer 3), and TCP Port Availability (Layer 4).  
+* **Standardization:** Every team member who uses the script produces the same report format.
 
 # Prerequisites
 * **PowerShell Version:** Requires PowerShell 5.1 or newer.  
