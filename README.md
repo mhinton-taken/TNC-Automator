@@ -1,5 +1,7 @@
 # TNC-Automator
-This PowerShell tool automates network validation using the tnc (Test-NetConnection) cmdlet. It sequentially tests DNS, ICMP, and TCP port status. It features conditional escalation, running a TraceRoute only if port tests fail, and captures all results in a timestamped forensic log for enterprise troubleshooting.It follows a structured execution flow that mirrors the OSI model to identify exactly where a network connection is failing.  
+
+# Purpose
+The TNC-Automator is a specialized diagnostic tool designed to streamline network validation between source and target systems. By automating the native Test-NetConnection (tnc) cmdlet, it replaces manual connectivity checks with a standardized, repeatable process. All findings are aggregated into a timestamped, forensic-grade log file, providing IT professionals with a comprehensive audit trail for enterprise troubleshooting and change management.
 
 # Non-technical summary:
 This script acts as a digital automated "health check" for network connections between your server and a target destination. Instead of just checking if a server is "on" or "off," it systematically investigates the connection in four logical steps: first, it confirms if the server’s name can be found (DNS); second, it checks if the server is reachable at all (Ping); third, it tests if the specific application service is open for business (Port); and finally, if the connection fails, it automatically maps out the entire network path to pinpoint exactly where the signal is getting blocked. All of these findings are automatically saved into a timestamped text report, allowing you to provide clear evidence to network or security teams without having to manually run multiple complex commands.
