@@ -16,7 +16,7 @@ This script is a modular diagnostic tool designed for automated network validati
 $SourceServerName = $env:computername
 
 # 2. The name or IP address of the server you want to test 
-$TargetServerName = "192.168.50.20"
+$TargetServerName = "10.0.0.x"
 
 # 3. The port number you want to test (e.g., '53' for DNS, '443' for HTTPS)
 $TargetServerPort = '80'
