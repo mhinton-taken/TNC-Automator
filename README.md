@@ -33,7 +33,7 @@ Place it in your desired tools directory (e.g., C:\Scripts\).
 # Configuration
 Before running, open the script and update the variables in the **Adjustable Settings** section:  
 ```
-$TargetServerName = "192.168.50.20"  # The IP or Hostname to test
+$TargetServerName = "10.0.0.x"  # The IP or Hostname to test
 $TargetServerPort = '80'             # The destination port
 $Dir = "D:\tools\logs\"              # Where to save your reports
 ```
