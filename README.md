@@ -26,7 +26,7 @@ This script is a modular diagnostic tool designed for automated network validati
 * **Permissions:** May require Administrator privileges to create log directories or perform certain network tests.  
 
 # Installation
-Download the .txt file (or rename it to .ps1).  
+Download the TNC-Automator_versionnumber_ps1.txt file.  Then rename it to TNC-Automator.ps1  
 
 Place it in your desired tools directory (e.g., C:\Scripts\).
 
