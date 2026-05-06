@@ -21,8 +21,8 @@ This script is a modular diagnostic tool designed for automated network validati
 * **Automation:** Replaces 5+ manual commands with one execution.
 * **Baseline Capture:** Records local IP and DNS configurations at the start of every test to provide context for the results.  
 * **Conditional Escalation:** Automatically initiates a -TraceRoute only if the specific port test fails, saving time during successful checks.
-* **Forensic Logging:** Utilizes stream redirection to capture warnings and errors into a timestamped, UTF-8 encoded text file for audit trails.    
-* **Layered Diagnostics:** Progressively tests DNS (Layer 7), ICMP Reachability (Layer 3), and TCP Port Availability (Layer 4).  
+* **Layered Diagnostics:** Progressively tests DNS (Layer 7), ICMP Reachability (Layer 3), and TCP Port Availability (Layer 4).
+* **Logging:** Utilizes stream redirection to capture warnings and errors into a timestamped, UTF-8 encoded text file for audit trails.    
 * **Standardization:** Every team member who uses the script produces the same report format.
 
 # Prerequisites
