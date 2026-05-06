@@ -3,10 +3,10 @@
 # Purpose
 The TNC-Automator is a specialized diagnostic tool designed to streamline network validation between source and target systems. By automating the native Test-NetConnection (tnc) cmdlet, it replaces manual connectivity checks with a standardized, repeatable process. All findings are aggregated into a timestamped log file, providing IT professionals with a comprehensive audit trail for enterprise troubleshooting and change management.
 
-# Non-technical summary:
+# Non-technical summary
 This script acts as a digital automated "health check" for network connections between your server and a target destination. Instead of just checking if a server is "on" or "off," it systematically investigates the connection in four logical steps: first, it confirms if the server’s name can be found (DNS); second, it checks if the server is reachable at all (Ping); third, it tests if the specific application service is open for business (Port); and finally, if the connection fails, it automatically maps out the entire network path to pinpoint exactly where the signal is getting blocked. All of these findings are automatically saved into a timestamped text report, allowing you to provide clear evidence to network or security teams without having to manually run multiple complex commands.
 
-# Technical summary:
+# Technical summary
 This script is a modular diagnostic tool designed for automated network validation and troubleshooting within enterprise environments. It follows a structured execution flow that mirrors the OSI model, beginning with local environment baselining via Get-NetIPConfiguration followed by a Layer 7 name resolution check using Resolve-DnsName. The script then validates Layer 3 reachability using ICMP and Layer 4 availability through a targeted TCP port test via Test-NetConnection. A key technical feature is the conditional diagnostic escalation: the script evaluates the TcpTestSucceeded boolean property and only initiates a -TraceRoute if the port test fails, optimizing execution time. To ensure comprehensive audit logging, it utilizes stream redirection (3>&1 2>&1) to capture the Warning and Error streams into a dynamically named, timestamped text file, providing a complete forensic record of connectivity failures and routing hops.
 
 
