@@ -1,0 +1,61 @@
+*********************************************************
+NETWORK TEST REPORT
+Source Server: SRV-PROD-01
+Source Powershell version: 5.1.19041.7181
+Target Server: 10.0.0.50
+Target Port:   80
+Report Date:   2026.05.05
+Report Time:   16:58
+*********************************************************
+
+ [ 0 ] Source IP configuration:
+
+ InterfaceAlias             : Ethernet 1
+ InterfaceIndex             : 14
+ InterfaceDescription       : Standard Gigabit Ethernet Controller
+ NetProfile.Name            : Office Network
+ IPv4Address                : 10.0.0.15
+ IPv6DefaultGateway         : 
+ IPv4DefaultGateway         : 10.0.0.1
+ DNSServer                  : 10.0.0.2
+                              10.0.0.1
+
+ InterfaceAlias             : Ethernet 2
+ InterfaceIndex             : 15
+ InterfaceDescription       : Secondary Network Adapter
+ NetAdapter.Status          : Disconnected
+
+ [ 1 ] Checking DNS Resolution...
+
+ Name                                 Type   TTL   Section   NameHost
+ ----                                 ----   ---   -------   --------
+ 50.0.0.10.in-addr.arpa               PTR    30    Answer    web-service-01
+
+ [ 2 ] Testing General Connectivity (TNC)...
+
+ ComputerName                 : 10.0.0.50
+ RemoteAddress                : 10.0.0.50
+ NameResolutionResults        : 10.0.0.50
+                                web-service-01
+ InterfaceAlias               : Ethernet 1
+ SourceAddress                : 10.0.0.15
+ NetRoute (NextHop)           : 0.0.0.0
+ PingSucceeded                : True
+ PingReplyDetails (RTT)       : 0 ms
+
+ [ 3 ] Testing Connection to Port: 80...
+
+ ComputerName                 : 10.0.0.50
+ RemoteAddress                : 10.0.0.50
+ RemotePort                   : 80
+ NameResolutionResults        : 10.0.0.50
+                                web-service-01
+ MatchingIPsecRules           : 
+ NetworkIsolationContext      : Private Network
+ IsAdmin                      : False
+ InterfaceAlias               : Ethernet 1
+ SourceAddress                : 10.0.0.15
+ NetRoute (NextHop)           : 0.0.0.0
+ TcpTestSucceeded             : True
+
+ [ + ] TCP Port Test SUCCESSFUL.
