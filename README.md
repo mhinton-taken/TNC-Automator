@@ -49,7 +49,7 @@ $Dir = "D:\tools\logs\"              # Where to save your reports
 ```powershell
 .\TNC-Automator.ps1
 ```
-### Output
+# Output
 The script generates a report named with the format: `YYYYMMDDTHHMMSS_SourceComputer_tnctest_report.txt`.
 The report includes:
 1.  **Header:** Source/Target details and timestamps.
